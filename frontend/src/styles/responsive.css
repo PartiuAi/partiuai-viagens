@@ -1,0 +1,305 @@
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 1180px) {
+  .container {
+    width: min(1280px, 100% - 40px);
+  }
+
+  .hero__grid {
+    gap: 40px;
+  }
+
+  .hero__floating-card {
+    left: 0;
+  }
+
+  .footer__main {
+    grid-template-columns: 1.3fr 1fr 1fr;
+  }
+
+  .footer__contact {
+    grid-column: 2 / -1;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    padding-top: 124px;
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 46px;
+  }
+
+  .hero__copy {
+    max-width: 720px;
+  }
+
+  .hero__visual {
+    max-width: 760px;
+    width: 100%;
+  }
+
+  .carousel__frame {
+    height: 520px;
+  }
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding: 84px 0;
+  }
+
+  .section-head {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .section-head__lede {
+    max-width: 620px;
+  }
+
+  .trust__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .cta__card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .cta__visual {
+    min-height: 280px;
+  }
+
+  .footer__newsletter {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .footer__main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 34px;
+  }
+
+  .footer__contact {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    width: min(1280px, 100% - 32px);
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .site-header__inner {
+    height: 72px;
+  }
+
+  .brand img {
+    height: 27px;
+  }
+
+  .offers-button {
+    padding: 0 14px;
+  }
+
+  .hero {
+    padding: 112px 0 20px;
+  }
+
+  .hero__title {
+    margin-top: 20px;
+  }
+
+  .hero__lede {
+    margin-top: 18px;
+  }
+
+  .planner {
+    margin-top: 26px;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .planner__fields::before {
+    left: 19px;
+  }
+
+  .route-field__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .route-field__control input {
+    height: 50px;
+    font-size: 14.5px;
+  }
+
+  .route-field__action {
+    top: 26px;
+  }
+
+  .hero__floating-card {
+    top: 14px;
+    left: 12px;
+    padding: 10px 14px;
+  }
+
+  .hero__floating-card strong {
+    font-size: 12.5px;
+  }
+
+  .carousel__frame {
+    height: 430px;
+    border-radius: 24px;
+  }
+
+  .slide__panel {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .slide__bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .slide__cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .carousel__hint {
+    display: none;
+  }
+
+  .trust__grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .modes__grid {
+    margin-top: 36px;
+  }
+
+  .modal {
+    padding: 24px 20px;
+    max-height: 92vh;
+  }
+
+  .modal__header {
+    padding-right: 52px;
+  }
+
+  .offer-card {
+    grid-template-columns: 104px 1fr;
+    gap: 14px;
+  }
+
+  .offer-card__media {
+    height: 96px;
+  }
+
+  .offer-card__cta {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .result-option {
+    grid-template-columns: auto 1fr auto;
+    row-gap: 8px;
+  }
+
+  .result-option__numbers {
+    grid-column: 2 / 3;
+    text-align: left;
+  }
+
+  .result-option__check {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .result__footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .result__footer .button {
+    width: 100%;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .search-modal__head {
+    margin-right: 46px;
+  }
+
+  .search-modal__hint {
+    display: none;
+  }
+
+  .hero__title-highlight {
+    letter-spacing: -0.03em;
+  }
+
+  .hero__proof {
+    flex-wrap: wrap;
+  }
+
+  .offers-button span {
+    display: none;
+  }
+
+  .offers-button {
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .carousel__frame {
+    height: 400px;
+  }
+
+  .slide__heading h2 {
+    font-size: 1.45rem;
+  }
+
+  .auth__socials {
+    grid-template-columns: 1fr;
+  }
+
+  .drawer {
+    width: 100%;
+  }
+
+  .toast-viewport {
+    right: 12px;
+    left: 12px;
+    bottom: 12px;
+    width: auto;
+  }
+}
