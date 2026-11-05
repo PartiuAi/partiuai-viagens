@@ -1,0 +1,112 @@
+/* =========================================================
+   Motion layer
+
+   Loaded last so its rules win over component transitions.
+   Everything here is about *leaving* gracefully: overlays that
+   fade out instead of blinking away, and a theme swap that
+   cross-fades instead of snapping.
+   ========================================================= */
+
+/* -------------------------------------------------------------
+   Overlay exit
+   The overlay stays mounted for `PRESENCE_MS` while these run.
+   ------------------------------------------------------------- */
+.modal-layer.is-closing .modal__backdrop,
+.drawer-layer.is-closing .drawer__backdrop {
+  animation: fadeOut var(--dur-overlay-exit) var(--ease-out) forwards;
+}
+
+.modal-layer.is-closing .modal {
+  animation: modalOut var(--dur-overlay-exit) var(--ease-out) forwards;
+}
+
+.drawer-layer.is-closing .drawer {
+  animation: drawerOut var(--dur-overlay-exit) var(--ease-out) forwards;
+}
+
+/* -------------------------------------------------------------
+   Toast exit
+   ------------------------------------------------------------- */
+.toast.is-exiting {
+  animation: toastOut var(--dur-overlay-exit) var(--ease-out) forwards;
+}
+
+/* -------------------------------------------------------------
+   Theme switch
+
+   Colour properties cross-fade while the theme flips. Only the
+   paint-related properties are listed so transforms (hover lifts,
+   reveals) keep their own timing.
+   ------------------------------------------------------------- */
+html.is-theme-shifting *,
+html.is-theme-shifting *::before,
+html.is-theme-shifting *::after {
+  transition:
+    background-color var(--dur-theme) var(--ease-out),
+    border-color var(--dur-theme) var(--ease-out),
+    color var(--dur-theme) var(--ease-out),
+    fill var(--dur-theme) var(--ease-out),
+    stroke var(--dur-theme) var(--ease-out),
+    box-shadow var(--dur-theme) var(--ease-out),
+    outline-color var(--dur-theme) var(--ease-out) !important;
+}
+
+/* -------------------------------------------------------------
+   Interactive polish
+   ------------------------------------------------------------- */
+
+/* Buttons get a subtle press rather than an instant jump. */
+.button,
+.offers-button,
+.icon-button,
+.header__avatar,
+.slide__cta,
+.offer-card__cta,
+.search-result,
+.result-option,
+.mode-card__link,
+.drawer__link,
+.footer__top {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:active {
+  transform: translateY(-1px) scale(0.985);
+}
+
+/* Cards lift a touch further and gain a glow, eased out. */
+.mode-card:hover,
+.offer-card:hover,
+.search-result:hover {
+  will-change: transform;
+}
+
+/* The route planner field icons nudge as you focus their input. */
+.route-field__control input:focus-visible ~ .route-field__action,
+.route-field:focus-within .route-field__icon {
+  transition: transform var(--dur-base) var(--ease-back);
+}
+
+.route-field:focus-within .route-field__icon--start {
+  transform: scale(1.06);
+}
+
+.route-field:focus-within .route-field__icon--end {
+  transform: scale(1.06);
+}
+
+/* -------------------------------------------------------------
+   Reduced motion
+
+   Overlays still need a frame to disappear, but nothing should
+   travel across the screen while the user asked for stillness.
+   ------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .modal-layer.is-closing .modal,
+  .modal-layer.is-closing .modal__backdrop,
+  .drawer-layer.is-closing .drawer,
+  .drawer-layer.is-closing .drawer__backdrop,
+  .toast.is-exiting {
+    animation: fadeOut 120ms linear forwards;
+  }
+}

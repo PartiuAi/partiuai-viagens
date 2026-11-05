@@ -1,0 +1,49 @@
+﻿# Dependencias
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Vite / cache
+.vite/
+.cache/
+
+# Variaveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Capturas de tela e artefatos de teste (nao fazem parte do projeto)
+preview/
+*.shot.png
+
+# Backups compactados (frontend.zip, preview.zip, referencias.zip)
+*.zip
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
