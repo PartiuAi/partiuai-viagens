@@ -76,7 +76,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .modal__title {
@@ -112,7 +112,7 @@
   flex: none;
   border-radius: 12px;
   background: var(--grad-soft);
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .search-modal__head input {
@@ -239,7 +239,7 @@
   padding: 3px 9px;
   border-radius: 999px;
   background: var(--grad-soft);
-  color: var(--blue);
+  color: var(--purple);
   font-size: 11px;
   font-weight: 800;
 }
@@ -281,7 +281,7 @@
   height: 60px;
   border-radius: 20px;
   background: var(--grad-soft);
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .search-empty strong {
@@ -393,7 +393,7 @@
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .offer-card__body h3 {
@@ -450,7 +450,7 @@
 
 .offer-card__cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 30px -16px rgba(84, 114, 255, 0.95);
+  box-shadow: 0 16px 30px -16px rgba(140, 82, 255, 0.95);
 }
 
 .offers-note {
@@ -551,7 +551,7 @@
 .mode-detail__features svg {
   flex: none;
   margin-top: 4px;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .mode-detail__note {
@@ -562,7 +562,7 @@
   border-radius: 16px;
   border: 1px solid var(--line);
   background: var(--surface);
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .mode-detail__note strong {
@@ -598,7 +598,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .result__head h2 {
@@ -635,8 +635,8 @@
   margin-top: 4px;
   flex: none;
   border-radius: 50%;
-  background: var(--blue);
-  box-shadow: 0 0 0 4px rgba(84, 114, 255, 0.18);
+  background: var(--purple);
+  box-shadow: 0 0 0 4px rgba(140, 82, 255, 0.18);
 }
 
 .result__dot--stop {
@@ -728,9 +728,9 @@
 }
 
 .result-option.is-selected {
-  border-color: var(--blue);
-  background: linear-gradient(120deg, rgba(84, 114, 255, 0.14), rgba(140, 82, 255, 0.08));
-  box-shadow: 0 0 0 3px rgba(84, 114, 255, 0.14);
+  border-color: var(--purple);
+  background: linear-gradient(120deg, rgba(140, 82, 255, 0.14), rgba(111, 59, 240, 0.08));
+  box-shadow: 0 0 0 3px rgba(140, 82, 255, 0.14);
 }
 
 .result-option__icon {
@@ -742,7 +742,7 @@
   border-radius: 14px;
   border: 1px solid var(--line);
   background: var(--grad-soft);
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .result-option__title {
@@ -800,7 +800,7 @@
 }
 
 .result-option.is-selected .result-option__check {
-  background: var(--blue);
+  background: var(--purple);
   border-color: transparent;
 }
 
@@ -880,7 +880,7 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .auth__brand h2 {
@@ -1028,7 +1028,7 @@
   padding: 0;
   border: none;
   background: none;
-  color: var(--blue);
+  color: var(--purple);
   font-size: 13.5px;
   font-weight: 700;
   cursor: pointer;
@@ -1120,7 +1120,7 @@
   border-radius: 12px;
   border: 1px solid var(--line);
   background: var(--surface-2);
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .drawer__link-text {
@@ -1146,7 +1146,7 @@
 }
 
 .drawer__link-arrow {
-  color: var(--blue);
+  color: var(--purple);
   opacity: 0;
   transition: opacity 0.2s var(--ease-out);
 }
@@ -1215,7 +1215,7 @@
   padding: 16px;
   border-radius: 18px;
   border: 1px solid var(--line);
-  background: linear-gradient(120deg, rgba(84, 114, 255, 0.16), rgba(140, 82, 255, 0.1));
+  background: linear-gradient(120deg, rgba(140, 82, 255, 0.16), rgba(111, 59, 240, 0.1));
 }
 
 .drawer__account-icon {
@@ -1332,8 +1332,8 @@
 }
 
 .toast--info .toast__icon {
-  background: rgba(84, 114, 255, 0.18);
-  color: var(--blue);
+  background: rgba(140, 82, 255, 0.18);
+  color: var(--purple);
 }
 
 .toast--error .toast__icon {

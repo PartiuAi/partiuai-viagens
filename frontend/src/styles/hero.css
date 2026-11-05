@@ -58,7 +58,7 @@
 }
 
 .hero__location svg {
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .hero__location strong {
@@ -99,7 +99,7 @@
   letter-spacing: -0.045em;
   line-height: 0.94;
   text-transform: uppercase;
-  background: linear-gradient(104deg, #7d94ff 0%, #5472ff 38%, #8c52ff 100%);
+  background: linear-gradient(104deg, #a78bfa 0%, #8c52ff 38%, #6f3bf0 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -149,7 +149,7 @@
 
 .hero__avatars span:first-child {
   margin-left: 0;
-  background: linear-gradient(135deg, #5472ff, #3a56f5);
+  background: linear-gradient(135deg, #8c52ff, #6f3bf0);
 }
 
 .hero__avatars span:nth-child(2) {
@@ -195,7 +195,7 @@
   inset: 4% -6% -6% 6%;
   z-index: -1;
   background:
-    radial-gradient(circle at 60% 30%, rgba(84, 114, 255, 0.4), transparent 62%),
+    radial-gradient(circle at 60% 30%, rgba(140, 82, 255, 0.4), transparent 62%),
     radial-gradient(circle at 82% 82%, rgba(140, 82, 255, 0.34), transparent 62%);
   filter: blur(34px);
 }
@@ -262,7 +262,7 @@
   padding: 22px;
   border-radius: 26px;
   border: 1px solid var(--line);
-  background: linear-gradient(160deg, rgba(84, 114, 255, 0.14), rgba(140, 82, 255, 0.05) 58%, transparent);
+  background: linear-gradient(160deg, rgba(140, 82, 255, 0.14), rgba(111, 59, 240, 0.05) 58%, transparent);
   box-shadow: var(--shadow-lg);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -274,7 +274,7 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(420px 210px at 0% 0%, rgba(84, 114, 255, 0.18), transparent 70%);
+  background: radial-gradient(420px 210px at 0% 0%, rgba(140, 82, 255, 0.18), transparent 70%);
 }
 
 .planner__top {
@@ -295,7 +295,7 @@
 }
 
 .planner__label svg {
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .planner__estimate {
@@ -340,9 +340,9 @@
   flex: none;
   border-radius: 14px;
   border: 1px solid transparent;
-  background: linear-gradient(140deg, #5472ff, #3a56f5);
+  background: linear-gradient(140deg, #8c52ff, #6f3bf0);
   color: #fff;
-  box-shadow: 0 10px 20px -12px rgba(84, 114, 255, 0.9);
+  box-shadow: 0 10px 20px -12px rgba(140, 82, 255, 0.9);
 }
 
 .route-field__icon--stop {
@@ -401,9 +401,9 @@
 
 .route-field__control input:focus {
   outline: none;
-  border-color: var(--blue);
+  border-color: var(--purple);
   background: var(--surface-2);
-  box-shadow: 0 0 0 4px rgba(84, 114, 255, 0.16);
+  box-shadow: 0 0 0 4px rgba(140, 82, 255, 0.16);
 }
 
 .route-field__action {
