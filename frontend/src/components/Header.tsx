@@ -46,8 +46,7 @@ export function Header({ theme, onToggleTheme, onOpenMenu, onOpenSearch, onOpenO
           <img
             src={theme === 'dark' ? brand.wordmarkLight : brand.wordmarkColor}
             alt="PartiuAí"
-            width="165"
-            height="32"
+            decoding="async"
           />
         </a>
 
