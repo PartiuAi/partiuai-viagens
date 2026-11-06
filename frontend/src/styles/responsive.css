@@ -105,7 +105,9 @@
   }
 
   .brand img {
+    width: auto;
     height: 27px;
+    flex-shrink: 0;
   }
 
   .offers-button {

@@ -81,8 +81,7 @@ export function MenuDrawer({
             <img
               src={theme === 'dark' ? brand.wordmarkLight : brand.wordmarkColor}
               alt="PartiuAí"
-              width="145"
-              height="28"
+              decoding="async"
             />
           </a>
           <button ref={closeRef} type="button" className="icon-button" onClick={onClose} aria-label="Fechar menu">
